@@ -31,8 +31,9 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
-  <link href="assets/vendor/video-js-democx/style-v.css" rel="stylesheet">
+  <!--<link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
+  <link href="assets/vendor/video-js-democx/style-v.css" rel="stylesheet">-->
+  <link href="https://cdn.plyr.io/3.4.6/plyr.css" rel="stylesheet">
   <link href="assets/vendor/thankyou/thankyou.css" rel="stylesheet">  
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -134,14 +135,33 @@
     
 
     <!-- ======= video Wisdom_of_Geese ======= -->
-	<div class="contai" >
-		<video id="my-video" class="video-js vjs-16-9 vjs-big-play-centered vjs-user-active" controls preload="auto"
-			 poster="https://cxv.s3.ir-thr-at1.arvanstorage.com/v-flying.jpg" data-setup='{"fluid": true}' aria-label="Space video">
-	    <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/Wisdom_of_Geese.webm" type="video/mp4" >
-		</video>
-   </div><br><br>
    
-   
+    <div class="video-container">
+        <video controls crossorigin playsinline poster="assets/img/v-flying.jpg" id="player">
+                <!-- Video files -->
+                <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/Wisdom_of_Geese.webm" type="video/mp4" size="576">
+                <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/Wisdom_of_Geese.webm" type="video/mp4" size="720">
+                <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/Wisdom_of_Geese.webm" type="video/mp4" size="1080">
+                <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/Wisdom_of_Geese.webm" type="video/mp4" size="1440">
+				
+                <!-- Caption files -->
+                <track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
+                    default>
+                <track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
+
+                <!-- Fallback for browsers that don't support the <video> element -->
+                <a href="https://cxv.s3.ir-thr-at1.arvanstorage.com/Wisdom_of_Geese.webm" download>Download</a>
+        </video>
+        <div class="flex-parent jc-center ">
+           <div class="actions ">
+		     <button type="button" class="btn js-play"><font color="#fff">Play</font></button>
+		     <button type="button" class="btn js-pause"><font color="#fff">Pause</font></button>
+		     <button type="button" class="btn js-stop"><font color="#fff">Stop</font></button>
+		     <button type="button" class="btn js-rewind"><font color="#fff">Rewind</font></button>
+		     <button type="button" class="btn js-forward"><font color="#fff">Forward</font></button>
+           </div> 
+        </div>
+    </div><br>
 
     
 	<!-- End video -->
@@ -323,13 +343,34 @@
             </div>
           </div>
         </div> <br><br>
-		<!-- ======= video Wisdom_of_Geese ======= -->
-    <div class="contai" >
-		<video id="my-video" class="video-js vjs-16-9 vjs-big-play-centered vjs-user-active" controls preload="auto"
-			 poster="https://cxv.s3.ir-thr-at1.arvanstorage.com/Customer_Experience_Matters.jpg" data-setup='{"fluid": true}' aria-label="Space video">
-	    <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/Customer_Experience_Matters.webm" type="video/mp4" >
-		</video>
-   </div><br>
+		<!-- ======= video Customer_Experience_Matters ======= -->
+       
+   	<div class="video-container">
+        <video controls crossorigin playsinline poster="assets/img/maxresdefault.jpg" id="player1">
+                <!-- Video files -->
+                <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/Customer_Experience_Matters.webm" type="video/mp4" size="576">
+                <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/Customer_Experience_Matters.webm" type="video/mp4" size="720">
+                <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/Customer_Experience_Matters.webm" type="video/mp4" size="1080">
+                <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/Customer_Experience_Matters.webm" type="video/mp4" size="1440">
+				
+                <!-- Caption files -->
+                <track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
+                    default>
+                <track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
+
+                <!-- Fallback for browsers that don't support the <video> element -->
+                <a href="https://cxv.s3.ir-thr-at1.arvanstorage.com/Customer_Experience_Matters.webm" download>Download</a>
+        </video>
+        <div class="flex-parent jc-center ">
+           <div class="actions ">
+		     <button type="button" class="btn js-play1"><font color="#fff">Play</font></button>
+		     <button type="button" class="btn js-pause1"><font color="#fff">Pause</font></button>
+		     <button type="button" class="btn js-stop1"><font color="#fff">Stop</font></button>
+		     <button type="button" class="btn js-rewind1"><font color="#fff">Rewind</font></button>
+		     <button type="button" class="btn js-forward1"><font color="#fff">Forward</font></button>
+           </div> 
+        </div>
+    </div><br>
    
 <!-- End Services Section -->
  
@@ -447,12 +488,32 @@
         </div>
       </div><br>
 	  
-	  <div class="contai" >
-        <video id="my-video" class="video-js vjs-16-9 vjs-big-play-centered vjs-user-active" controls preload="auto"
-         poster="assets/img/communication-people.png" data-setup='{"fluid": true}' aria-label="Space video">
-        <source src="https://drive.google.com/uc?export=view&id=1pzwDuuPkWH0a1m3N2uQmacSfpHy6rukR" type="video/mp4" >
-       </video>
-     </div><br>
+	<div class="video-container">
+        <video controls crossorigin playsinline poster="assets/img/communication-people.png" id="player3">
+                <!-- Video files -->
+                <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/Active_Listening._How_to_be_a_great_listener..webm" type="video/mp4" size="576">
+                <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/Active_Listening._How_to_be_a_great_listener..webm" type="video/mp4" size="720">
+                <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/Active_Listening._How_to_be_a_great_listener..webm" type="video/mp4" size="1080">
+                <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/Active_Listening._How_to_be_a_great_listener..webm" type="video/mp4" size="1440">
+				
+                <!-- Caption files -->
+                <track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
+                    default>
+                <track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
+
+                <!-- Fallback for browsers that don't support the <video> element -->
+                <a href="https://cxv.s3.ir-thr-at1.arvanstorage.com/Active_Listening._How_to_be_a_great_listener..webm" download>Download</a>
+        </video>
+        <div class="flex-parent jc-center ">
+           <div class="actions ">
+		     <button type="button" class="btn js-play3"><font color="#fff">Play</font></button>
+		     <button type="button" class="btn js-pause3"><font color="#fff">Pause</font></button>
+		     <button type="button" class="btn js-stop3"><font color="#fff">Stop</font></button>
+		     <button type="button" class="btn js-rewind3"><font color="#fff">Rewind</font></button>
+		     <button type="button" class="btn js-forward3"><font color="#fff">Forward</font></button>
+           </div> 
+        </div>
+    </div><br>
 
     </div>
   </section><!-- End Resume Section --> 
@@ -633,12 +694,37 @@
 			<p><em>More than that, when you go the extra mile to resolve a customer’s issue, you show that you care and appreciate them.</em></p>
 			<p><em>Appreciation and gratitude can go a long way in showing empathy to the customer.</em></p>
             
-          </div>
-		  
+          </div>  
         </div>
       </div>
-	 </div>
+	<div class="video-container">
+        <video controls crossorigin playsinline poster="assets/img/NEGATIVELY.jpg" id="player4">
+                <!-- Video files -->
+                <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/NEGATIVELY.webm" type="video/mp4" size="576">
+                <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/NEGATIVELY.webm" type="video/mp4" size="720">
+                <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/NEGATIVELY.webm" type="video/mp4" size="1080">
+                <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/NEGATIVELY.webm" type="video/mp4" size="1440">
+				
+                <!-- Caption files -->
+                <track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
+                    default>
+                <track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
+
+                <!-- Fallback for browsers that don't support the <video> element -->
+                <a href="https://cxv.s3.ir-thr-at1.arvanstorage.com/NEGATIVELY.webm" download>Download</a>
+        </video>
+        <div class="flex-parent jc-center ">
+           <div class="actions ">
+		     <button type="button" class="btn js-play4"><font color="#fff">Play</font></button>
+		     <button type="button" class="btn js-pause4"><font color="#fff">Pause</font></button>
+		     <button type="button" class="btn js-stop4"><font color="#fff">Stop</font></button>
+		     <button type="button" class="btn js-rewind4"><font color="#fff">Rewind</font></button>
+		     <button type="button" class="btn js-forward4"><font color="#fff">Forward</font></button>
+           </div> 
+        </div>
     </div>
+  </div>
+</div>
   </section><!-- End Portfolio Section -->
   <!-- ======= Solution Section ======= -->
   <section id="solution" class="solution">
@@ -731,12 +817,33 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
             
 	  </div>
 	  
-	  <div class="contai" >
-				<video id="my-video" class="video-js vjs-16-9 vjs-big-play-centered vjs-user-active" controls preload="auto"
-					poster="assets/img/12-steve-2.1.png" data-setup='{"fluid": true}' aria-label="Space video">
-					<source src="https://drive.google.com/uc?export=view&id=1F6v1HPazcEgnwk9Cx9P8GI0dOr3AGSJ-" type="video/mp4" >
-		        </video>
-      </div><br><br><br>
+   <div class="video-container">
+	     <video controls crossorigin playsinline poster="assets/img/12-steve-2.1.png" id="player5">
+                <!-- Video files -->
+                <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/Team_work.webm" type="video/mp4" size="576">
+                <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/Team_work.webm" type="video/mp4" size="720">
+                <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/Team_work.webm" type="video/mp4" size="1080">
+                <source src="https://cxv.s3.ir-thr-at1.arvanstorage.com/Team_work.webm" type="video/mp4" size="1440">
+				
+
+                <!-- Caption files -->
+                <track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
+                    default>
+                <track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
+
+                <!-- Fallback for browsers that don't support the <video> element -->
+                <a href="https://cxv.s3.ir-thr-at1.arvanstorage.com/Team_work.webm" download>Download</a>
+         </video>
+      <div class="flex-parent jc-center">
+        <div class="actions">
+		  <button type="button" class="btn js-play5"><font color="#fff">Play</font></button>
+		  <button type="button" class="btn js-pause5"><font color="#fff">Pause</font></button>
+		  <button type="button" class="btn js-stop5"><font color="#fff">Stop</font></button>
+		  <button type="button" class="btn js-rewind5"><font color="#fff">Rewind</font></button>
+		  <button type="button" class="btn js-forward5"><font color="#fff">Forward</font></button>
+       </div> 
+     </div>
+  </div><br><br><br>
 	  
   <div class="patterns">
     <svg width="100%" height="100%">
@@ -858,9 +965,11 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
   </div>
 
   <!-- Vendor JS Files -->
-  <script src="https://unpkg.com/video.js/dist/video.min.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'>
-  </script><script  src="assets/vendor/video-js-democx/script-v.js"></script> 
+  <script src='https://cdn.plyr.io/3.4.6/plyr.js'></script> 
+  <script  src="assets/vendor/video-js-democx/plyr.js"></script>
+  <!--<script src="https://unpkg.com/video.js/dist/video.min.js"></script>-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <!--<script  src="assets/vendor/video-js-democx/script-v.js"></script>-->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>

@@ -1038,11 +1038,60 @@ section .container {
 --------------------------------------------------------------*/
 
 
-.contai {
+.video-container {
   max-width: 800px;
   margin: 0 auto;
 }
 
+.plyr {
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.grid-parent {
+  display: grid;
+}
+
+.flex-parent {
+  display: flex;
+  min-height: 0px;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.button {
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  background: #2245AD;
+  padding: 15px 40px;
+  color: #ffffff;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+.button:hover {
+  background: #1b378b;
+}
+.button.block {
+  display: block;
+  width: 200px;
+  color: #000000;
+}
+.button.block:hover {
+  background: #AD2266;
+}
+.button.margin-auto {
+  margin: 0 auto;
+}
+.button.margin-right {
+  margin-right: 20px;
+}
 
 /*--------------------------------------------------------------
 # About
