@@ -1159,3 +1159,34 @@ svg text {
   }
   
 }
+
+/* On screens that are 992px wide or less,  */
+@media screen and (max-width: 992px) {
+svg text {
+  font-family: Lora;
+  letter-spacing: 8px;
+  stroke: #ffa5d8;
+  font-size: 120px;
+  font-weight: 500;
+  stroke-width: 3;
+ 
+  animation: textAnimate 5s infinite alternate;
+  
+}
+}
+
+/* On screens that are 600px wide or less,*/
+@media screen and (max-width: 600px) {
+  svg text {
+  font-family: Lora;
+  letter-spacing: 5px;
+  stroke: #ffa5d8;
+  font-size: 50px;
+  font-weight: 300;
+  stroke-width: 3;
+ 
+  animation: textAnimate 5s infinite alternate;
+  
+}
+}
+
