@@ -1,643 +1,1072 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Mohammad Yousuf | Customer Experience Leader</title>
-  <meta name="description" content="Customer Experience Leader with 18+ years of expertise in building exceptional customer journeys in Telecom and Service Industry.">
-  <meta name="keywords" content="Customer Experience, CX, Customer Service, Leadership, Telecom, Bangladesh">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammad Yousuf | CX Consultant & Trainer</title>
+  <meta name="description" content="Customer Experience Consultant & Trainer with 18+ years in Telecom and Service Industry. CX Training, Leadership Workshops, Contact Center Consulting, CX Audits.">
+  <meta name="keywords" content="Customer Experience, CX Consultant, CX Trainer, Contact Center, Telecom, Bangladesh, Leadership">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.ico" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    :root {
+      --ink: #1a1814;
+      --ink-2: #3d3a34;
+      --ink-3: #7a7669;
+      --ink-4: #b5b0a4;
+      --paper: #faf9f6;
+      --paper-2: #f0ede6;
+      --paper-3: #e6e0d4;
+      --accent: #c5590a;
+      --accent-light: #f5ede5;
+      --accent-dark: #8c3c05;
+      --rule: rgba(26,24,20,0.12);
+      --font-display: 'DM Serif Display', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+      --max: 1100px;
+      --pad: clamp(1.5rem, 5vw, 4rem);
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+    html { scroll-behavior: smooth; }
 
+    body {
+      font-family: var(--font-body);
+      background: var(--paper);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── Scrollbar ── */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: var(--paper-2); }
+    ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+
+    /* ── Utility ── */
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+
+    /* ─────────────────────────── HEADER ─────────────────────────── */
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(250,249,246,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--rule);
+    }
+    .header-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      font-family: var(--font-display);
+      font-size: 22px;
+      color: var(--ink);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+    .logo span { color: var(--accent); }
+
+    nav ul { list-style: none; display: flex; gap: 2rem; }
+    nav a {
+      font-size: 13px; font-weight: 500; letter-spacing: 0.04em;
+      text-transform: uppercase; color: var(--ink-3); text-decoration: none;
+      transition: color 0.2s;
+    }
+    nav a:hover, nav a.active { color: var(--accent); }
+
+    .nav-cta {
+      display: inline-block;
+      font-size: 13px; font-weight: 500;
+      padding: 8px 18px;
+      background: var(--accent); color: #fff;
+      border-radius: 2px; text-decoration: none;
+      letter-spacing: 0.03em;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .nav-cta:hover { background: var(--accent-dark); }
+
+    .hamburger {
+      display: none; background: none; border: none;
+      font-size: 22px; color: var(--ink); cursor: pointer;
+    }
+
+    /* ─────────────────────────── HERO ─────────────────────────── */
+    #hero {
+      min-height: 100vh;
+      display: flex; align-items: center;
+      padding-top: 64px;
+      background: var(--paper);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      padding: 5rem 0;
+    }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-size: 12px; font-weight: 500; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--accent);
+      margin-bottom: 1.5rem;
+    }
+    .hero-eyebrow::before {
+      content: ''; display: block;
+      width: 32px; height: 1px; background: var(--accent);
+    }
+    h1.hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      line-height: 1.15;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+    }
+    h1.hero-title em { color: var(--accent); font-style: italic; }
+    .hero-body {
+      font-size: 17px; color: var(--ink-2);
+      line-height: 1.75;
+      max-width: 500px;
+      margin-bottom: 2.5rem;
+    }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--accent); color: #fff;
+      font-size: 14px; font-weight: 500;
+      padding: 13px 24px; border-radius: 2px;
+      text-decoration: none; letter-spacing: 0.03em;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: var(--accent-dark); transform: translateY(-1px); }
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; color: var(--ink-2);
+      font-size: 14px; font-weight: 500;
+      padding: 13px 24px; border-radius: 2px;
+      border: 1px solid var(--rule);
+      text-decoration: none; letter-spacing: 0.03em;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-ghost:hover { border-color: var(--ink-3); color: var(--ink); }
+
+    .hero-stats {
+      display: flex; gap: 2rem; margin-top: 3rem;
+      padding-top: 2rem; border-top: 1px solid var(--rule);
+    }
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 2rem; color: var(--ink);
+      line-height: 1;
+    }
+    .stat-label { font-size: 12px; color: var(--ink-3); margin-top: 4px; letter-spacing: 0.02em; }
+
+    .hero-visual {
+      position: relative;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .hero-visual img {
+      width: 100%; max-width: 460px;
+      border-radius: 4px;
+      position: relative; z-index: 2;
+      object-fit: cover;
+    }
+    .hero-bg-shape {
+      position: absolute;
+      width: 380px; height: 380px;
+      background: var(--accent-light);
+      border-radius: 50%;
+      top: 50%; left: 50%;
+      transform: translate(-40%, -50%);
+      z-index: 1;
+    }
+    .hero-tag {
+      position: absolute; bottom: 32px; left: -16px; z-index: 3;
+      background: var(--ink); color: #fff;
+      font-size: 13px; font-weight: 500;
+      padding: 12px 20px;
+      border-radius: 2px;
+      box-shadow: 0 8px 32px rgba(26,24,20,0.18);
+      line-height: 1.4;
+    }
+    .hero-tag strong { display: block; font-size: 17px; font-family: var(--font-display); }
+
+    /* Decorative lines */
+    .deco-lines {
+      position: absolute; right: 0; top: 0; bottom: 0;
+      width: 40px; display: flex; flex-direction: column; justify-content: center;
+      gap: 6px; padding-right: 12px;
+    }
+    .deco-lines span {
+      display: block; height: 1px; background: var(--rule);
+      animation: lineGrow 1s ease both;
+    }
+    .deco-lines span:nth-child(1) { width: 100%; animation-delay: 0.1s; }
+    .deco-lines span:nth-child(2) { width: 70%; animation-delay: 0.2s; }
+    .deco-lines span:nth-child(3) { width: 50%; animation-delay: 0.3s; }
+    @keyframes lineGrow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+    /* ─────────────────────────── SECTION BASE ─────────────────────────── */
+    section { padding: 6rem 0; }
+    .section-label {
+      font-size: 11px; font-weight: 500; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--accent);
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 1rem;
+    }
+    .section-label::before {
+      content: ''; display: block;
+      width: 24px; height: 1px; background: var(--accent);
+    }
+    h2.section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      line-height: 1.2;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+    h2.section-title em { color: var(--accent); font-style: italic; }
+    .section-intro {
+      font-size: 17px; color: var(--ink-2); line-height: 1.75;
+      max-width: 600px;
+    }
+    .divider { border: none; border-top: 1px solid var(--rule); }
+
+    /* ─────────────────────────── SERVICES ─────────────────────────── */
+    #services { background: var(--paper-2); }
+    .services-header {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 3rem; align-items: end;
+      margin-bottom: 4rem;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1px;
+      background: var(--rule);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .service-card {
+      background: var(--paper);
+      padding: 2.5rem 2rem;
+      transition: background 0.2s;
+      cursor: default;
+    }
+    .service-card:hover { background: var(--accent-light); }
+    .service-icon {
+      font-size: 28px; color: var(--accent);
+      margin-bottom: 1.25rem;
+      display: block;
+    }
+    .service-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.25rem; color: var(--ink);
+      margin-bottom: 0.75rem;
+    }
+    .service-card p {
+      font-size: 14px; color: var(--ink-3);
+      line-height: 1.65; margin-bottom: 1.25rem;
+    }
+    .service-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag {
+      font-size: 11px; letter-spacing: 0.04em;
+      padding: 3px 10px; border-radius: 2px;
+      background: var(--paper-3); color: var(--ink-3);
+      font-weight: 500;
+    }
+
+    /* ─────────────────────────── CLIENTS ─────────────────────────── */
+    .clients-bar {
+      padding: 2.5rem 0;
+      background: var(--ink);
+      display: flex; align-items: center; justify-content: center;
+      flex-wrap: wrap; gap: 2.5rem;
+    }
+    .clients-bar-label {
+      font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+      color: rgba(255,255,255,0.4); font-weight: 500;
+    }
+    .client-pill {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 13px; color: rgba(255,255,255,0.7);
+      font-weight: 500; letter-spacing: 0.03em;
+    }
+    .client-pill i { color: var(--accent); font-size: 16px; }
+
+    /* ─────────────────────────── ABOUT ─────────────────────────── */
+    #about { background: var(--paper); }
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 5rem; align-items: start;
+    }
+    .about-text p { font-size: 16px; color: var(--ink-2); margin-bottom: 1.25rem; line-height: 1.8; }
+    .about-pillars { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 1rem; }
+    .pillar {
+      display: flex; gap: 1rem; align-items: flex-start;
+      padding: 1.25rem;
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      background: var(--paper-2);
+      transition: border-color 0.2s;
+    }
+    .pillar:hover { border-color: var(--accent); }
+    .pillar-icon { font-size: 20px; color: var(--accent); flex-shrink: 0; margin-top: 2px; }
+    .pillar h4 { font-size: 14px; font-weight: 500; color: var(--ink); margin-bottom: 2px; }
+    .pillar p { font-size: 13px; color: var(--ink-3); margin: 0; line-height: 1.6; }
+    .about-video h3 {
+      font-family: var(--font-display);
+      font-size: 1.4rem; color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+    .about-video p { font-size: 14px; color: var(--ink-3); margin-bottom: 1.25rem; }
+    .video-wrap {
+      border-radius: 4px; overflow: hidden;
+      aspect-ratio: 16/9;
+      border: 1px solid var(--rule);
+    }
+    .video-wrap iframe { width: 100%; height: 100%; border: none; display: block; }
+
+    /* ─────────────────────────── METHODOLOGY ─────────────────────────── */
+    #methodology { background: var(--paper-2); }
+    .method-intro {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 3rem; align-items: end;
+      margin-bottom: 4rem;
+    }
+    .method-tabs {
+      display: flex; gap: 1rem; flex-wrap: wrap;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 3rem;
+    }
+    .tab-btn {
+      background: none; border: none; cursor: pointer;
+      font-family: var(--font-body);
+      font-size: 13px; font-weight: 500; letter-spacing: 0.04em;
+      text-transform: uppercase; color: var(--ink-3);
+      padding: 10px 0; margin-bottom: -1px;
+      border-bottom: 2px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+    .method-content h3 {
+      font-family: var(--font-display);
+      font-size: 1.5rem; margin-bottom: 1rem; color: var(--ink);
+    }
+    .method-content p { font-size: 15px; color: var(--ink-2); line-height: 1.8; margin-bottom: 1rem; }
+    .method-list { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1.5rem; }
+    .method-list li {
+      display: flex; gap: 10px; align-items: flex-start;
+      font-size: 14px; color: var(--ink-2);
+    }
+    .method-list li::before {
+      content: ''; display: block; flex-shrink: 0;
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--accent); margin-top: 8px;
+    }
+
+    /* Listening table */
+    .compare-table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; }
+    .compare-table th {
+      font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--ink-3); font-weight: 500;
+      padding: 10px 14px; text-align: left;
+      border-bottom: 1px solid var(--rule);
+    }
+    .compare-table td {
+      padding: 10px 14px; font-size: 14px; color: var(--ink-2);
+      border-bottom: 1px solid var(--rule); vertical-align: top;
+    }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table td:first-child { color: var(--ink-3); font-weight: 500; font-size: 13px; }
+    .compare-table td.bad { color: #b94040; }
+    .compare-table td.good { color: #3a7a3a; }
+
+    /* Geese cards */
+    .geese-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; }
+    .geese-card {
+      background: var(--paper); border: 1px solid var(--rule);
+      border-radius: 2px; padding: 1.5rem 1.25rem;
+      transition: border-color 0.2s;
+    }
+    .geese-card:hover { border-color: var(--accent); }
+    .geese-card .gc-icon { font-size: 22px; color: var(--accent); margin-bottom: 0.75rem; display: block; }
+    .geese-card h4 { font-size: 14px; font-weight: 500; color: var(--ink); margin-bottom: 4px; }
+    .geese-card p { font-size: 13px; color: var(--ink-3); line-height: 1.5; }
+
+    /* Empathy types */
+    .empathy-types { display: flex; flex-direction: column; gap: 0.75rem; }
+    .empathy-row {
+      display: grid; grid-template-columns: 1fr 2fr;
+      gap: 1rem; align-items: start;
+      padding: 1rem 1.25rem;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      transition: border-color 0.2s;
+    }
+    .empathy-row:hover { border-color: var(--accent); }
+    .empathy-type { font-size: 13px; font-weight: 500; color: var(--ink); }
+    .empathy-approach { font-size: 13px; color: var(--ink-3); line-height: 1.5; }
+
+    /* ─────────────────────────── TESTIMONIAL / QUOTE ─────────────────────────── */
+    .quote-section {
+      background: var(--ink); color: #fff;
+      padding: 5rem 0; text-align: center;
+    }
+    .quote-mark {
+      font-family: var(--font-display);
+      font-size: 6rem; line-height: 0.6;
+      color: var(--accent); opacity: 0.6;
+      display: block; margin-bottom: 1.5rem;
+    }
+    blockquote {
+      font-family: var(--font-display);
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      line-height: 1.4;
+      color: rgba(255,255,255,0.9);
+      max-width: 720px;
+      margin: 0 auto 1.5rem;
+      font-style: italic;
+    }
+    .quote-attr {
+      font-size: 13px; letter-spacing: 0.08em;
+      text-transform: uppercase; color: rgba(255,255,255,0.4);
+    }
+
+    /* ─────────────────────────── CONTACT ─────────────────────────── */
+    #contact { background: var(--paper); }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 5rem; align-items: start;
+    }
+    .contact-info h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      color: var(--ink); margin-bottom: 1rem;
+    }
+    .contact-info p { font-size: 16px; color: var(--ink-2); line-height: 1.75; margin-bottom: 2.5rem; }
+    .contact-details { display: flex; flex-direction: column; gap: 1.25rem; }
+    .contact-item { display: flex; align-items: flex-start; gap: 1rem; }
+    .contact-item i {
+      font-size: 18px; color: var(--accent);
+      flex-shrink: 0; margin-top: 2px;
+    }
+    .contact-item strong { display: block; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 2px; }
+    .contact-item a, .contact-item span {
+      font-size: 15px; color: var(--ink);
+      text-decoration: none; transition: color 0.2s;
+    }
+    .contact-item a:hover { color: var(--accent); }
+    .contact-social { display: flex; gap: 12px; margin-top: 2rem; }
+    .social-link {
+      display: flex; align-items: center; justify-content: center;
+      width: 40px; height: 40px;
+      border: 1px solid var(--rule); border-radius: 2px;
+      color: var(--ink-3); font-size: 18px;
+      text-decoration: none; transition: border-color 0.2s, color 0.2s;
+    }
+    .social-link:hover { border-color: var(--accent); color: var(--accent); }
+
+    .contact-form {
+      background: var(--paper-2);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      padding: 2.5rem;
+    }
+    .form-group { margin-bottom: 1.25rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    label {
+      display: block; font-size: 12px; font-weight: 500;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--ink-3); margin-bottom: 6px;
+    }
+    input, textarea {
+      width: 100%; padding: 11px 14px;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      font-family: var(--font-body); font-size: 15px;
+      color: var(--ink); outline: none;
+      transition: border-color 0.2s;
+    }
+    input:focus, textarea:focus { border-color: var(--accent); }
+    textarea { resize: vertical; min-height: 140px; }
+    .submit-btn {
+      width: 100%; padding: 14px;
+      background: var(--accent); color: #fff;
+      border: none; border-radius: 2px;
+      font-family: var(--font-body); font-size: 15px; font-weight: 500;
+      cursor: pointer; letter-spacing: 0.04em;
+      transition: background 0.2s;
+    }
+    .submit-btn:hover { background: var(--accent-dark); }
+    .form-note { font-size: 12px; color: var(--ink-4); margin-top: 10px; text-align: center; }
+    .form-success {
+      display: none; padding: 12px; margin-bottom: 16px;
+      background: #eef6ee; color: #2d5e2d;
+      border: 1px solid #c2dac2; border-radius: 2px;
+      font-size: 14px;
+    }
+
+    /* ─────────────────────────── FOOTER ─────────────────────────── */
+    footer {
+      background: var(--ink); color: rgba(255,255,255,0.5);
+      padding: 2rem 0;
+      font-size: 13px;
+    }
+    .footer-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-logo {
+      font-family: var(--font-display); font-size: 18px;
+      color: #fff; text-decoration: none;
+    }
+    .footer-logo span { color: var(--accent); }
+    footer a { color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
+    footer a:hover { color: var(--accent); }
+
+    /* ─────────────────────────── MOBILE ─────────────────────────── */
+    @media (max-width: 900px) {
+      .hero-grid, .about-grid, .contact-grid, .services-header, .method-intro { grid-template-columns: 1fr; gap: 2.5rem; }
+      .hero-visual { order: -1; }
+      .hero-bg-shape { width: 280px; height: 280px; }
+      .hero-tag { left: 0; bottom: 16px; }
+      .tab-panel.active { grid-template-columns: 1fr; }
+      nav ul { display: none; }
+      .hamburger { display: block; }
+      nav.open ul {
+        display: flex; flex-direction: column; gap: 0;
+        position: fixed; top: 64px; left: 0; right: 0;
+        background: var(--paper); border-bottom: 1px solid var(--rule);
+        padding: 1rem var(--pad);
+      }
+      nav.open ul a { padding: 10px 0; display: block; font-size: 15px; }
+      .hero-stats { flex-wrap: wrap; gap: 1.5rem; }
+      .form-row { grid-template-columns: 1fr; }
+      .deco-lines { display: none; }
+    }
+
+    /* ─────────────────────────── ANIMATIONS ─────────────────────────── */
+    .fade-up {
+      opacity: 0; transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-up.visible { opacity: 1; transform: none; }
+    .fade-up:nth-child(2) { transition-delay: 0.1s; }
+    .fade-up:nth-child(3) { transition-delay: 0.2s; }
+    .fade-up:nth-child(4) { transition-delay: 0.3s; }
+  </style>
 </head>
+<body>
 
-<body class="index-page">
+<!-- ── HEADER ── -->
+<header>
+  <div class="container header-inner">
+    <a href="#hero" class="logo">CX<span>.</span></a>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="nav-cta">Book Consultation</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <i class="bi bi-list"></i>
+    </button>
+  </div>
+</header>
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-<a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-    <!-- <img src="assets/img/logo1.png" alt=""> -->
-    <h1 class="sitename">
-        <div class="cx-logo">
-            CX<span class="dot"></span>
-        </div>
-    </h1>
-</a>
-
-<nav id="navmenu" class="navmenu">
-  <ul>
-    <li><a href="#hero" class="active">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#empathy">Empathy</a></li>
-    <li><a href="#listening">Levels of Listening</a></li>
-    <li><a href="#geese">Wisdom of Geese</a></li>
-    <li><a href="#solution">Service Solutions</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-</nav>
-
-      <div class="header-social-links">
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://linkedin.com/in/mohammadyousuf-cx" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
-
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-center content">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            
-
-            <h2>Crafting Customer Experiences with Passion</h2>
-            <p class="lead mt-3">18+ years of Telecom & Service Industry Leadership</p>
-
-
-          </div>
-          <div class="col-lg-6">
-            <div class="hero-image">
-              <img src="assets/img/profile/profile-2.png" alt="Portfolio Hero Image" class="img-fluid" data-aos="zoom-out" data-aos-delay="300">
-              <div class="shape-1"></div>
-              <div class="shape-2"></div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <div class="title-shape">
-          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-          </svg>
-        </div>
-            <p>With 18+ years of experience in Telecom and Service Industry leadership, 
-                I've learned that creating exceptional customer experiences requires more 
-                than efficient service—it demands genuine human connection. Every interaction 
-                shapes how customers feel about your brand, and I help organizations transform 
-                those moments into lasting loyalty.
-            </p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row align-items-center">
-              
-              <!-- Video Section -->
-              <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-                  <div class="text-center my-4">
-                      <h5 class="mb-3">Why Customer Experience Matters</h5>
-                      <div class="ratio ratio-16x9">
-                          <iframe 
-                              src="https://www.youtube.com/embed/RmWLo0Trl8I" 
-                              title="Customer Experience Matters" 
-                              frameborder="0" 
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                              allowfullscreen>
-                          </iframe>
-                      </div>
-                      <small class="text-muted d-block mt-2">
-                        This powerful video from Temkin Group beautifully explains 
-                        why Customer Experience is the key to business success.
-                      </small>
-                  </div>
-              </div>
-
-              <!-- Service & Excellence Content -->
-              <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-                  <div class="about-content">
-                      <span class="subtitle">The Foundation</span>
-                      <h2>Service & Excellence</h2>
-                      
-                      <p class="lead mb-4">
-                          I believe true service is about taking meaningful actions to create value for others. 
-                          It stems from care — the fundamental essence that connects us as human beings.
-                      </p>
-                      
-                      <h3 class="mt-4 mb-3">Core Attributes of Service Excellence</h3>
-                      
-                      <ul class="list-unstyled">
-                        <li class="mb-3">
-                            <strong>🔹 Listening:</strong> I hear what customers truly need, simplify complexity, and take decisive action.
-                        </li>
-                        <li class="mb-3">
-                            <strong>🔹 Empathy:</strong> I see through their eyes, listen with their ears, and feel with their heart.
-                        </li>
-                        <li class="mb-3">
-                            <strong>🔹 Solution-Oriented:</strong> I take ownership, think innovatively, and always keep my promises.
-                        </li>
-                      </ul>
-                  </div>
-              </div>
-              
-          </div>
-      </div>
-
-    </section><!-- /About Section -->
-
-
-    <!-- About Section -->
-<!-- Empathy Section -->
-<section id="empathy" class="about section white-background">
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Empathy</h2>
-        <div class="title-shape">
-            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-            </svg>
-        </div>
-    </div><!-- End Section Title -->
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row align-items-center">
-            
-            <!-- Left Side: Text Content -->
-            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-                <div class="about-content">
-                    <span class="subtitle">Deepening the Connection</span>
-                    <h3 class="mt-4 mb-3">The Empathy Factor</h3>
-                    
-                    <p class="lead mb-4">
-                        Empathy is a powerful tool because it doesn't always require a physical solution — 
-                        often, it only requires genuine understanding.
-                    </p>
-                    
-                    <h4 class="mt-4 mb-3">Different Types of Customers Need Different Empathetic Approaches:</h4>
-                    
-                    <ul class="list-unstyled">
-                        <li class="mb-3"><strong>😤 Angry Customers →</strong> Pause. Listen. Validate feelings first. Empathy before solutions.</li>
-                        <li class="mb-3"><strong>⏱️ Impatient Customers →</strong> Respect their time. Commit to speed. Over-deliver on promises.</li>
-                        <li class="mb-3"><strong>🧠 Know-it-all Customers →</strong> Validate their expertise. Guide gently. Lead with respect.</li>
-                        <li class="mb-3"><strong>😞 Dissatisfied Customers →</strong> Listen deeper. Ask smarter questions. Exceed expectations.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Right Side: Video -->
-            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-                <div class="text-center">
-                    <h5 class="mb-3">How Empathy Works – And Why Sympathy Can't</h5>
-                    <div class="ratio ratio-16x9 mx-auto" style="max-width: 100%;">
-                        <iframe 
-                            src="https://www.youtube.com/embed/1f0eSejlzLo" 
-                            title="How empathy works - and sympathy can't" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <small class="text-muted d-block mt-2">
-                        A powerful explanation on the real meaning and power of empathy
-                    </small>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section><!-- /Empathy Section -->  
-
-<!-- Levels of Listening Section -->
-<section id="listening" class="about section light-background">
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Levels of Listening</h2>
-        <div class="title-shape">
-            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-            </svg>
-        </div>
-        <p class="lead">"When people talk, listen completely. Most people never listen." 
-            <strong>— Ernest Hemingway</strong>
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <span class="hero-eyebrow">CX Consultant &amp; Trainer · Dhaka, Bangladesh</span>
+        <h1 class="hero-title">
+          Turning every customer<br>
+          interaction into<br>
+          <em>lasting loyalty</em>
+        </h1>
+        <p class="hero-body">
+          18+ years of leadership in Telecom &amp; Service industries — helping contact centers, BPOs, and service teams build customer-first cultures through training, coaching, and strategy.
         </p>
-        <p class="lead mb-4">
-              To truly serve customers with passion, we must move beyond <strong>Cosmetic Listening</strong> 
-              to <strong>Deep (Active) Listening</strong>.
-        </p>
-    </div>
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-        
-        <!-- Passive to Active Comparison -->
-        <div class="row align-items-center g-5 mb-5">
-            <div class="col-lg-7">
-                <h4 class="mb-4">From Passive to Active Listening</h4>
-                <table class="table table-bordered">
-                    <thead class="table-light">
-                        <tr>
-                            <th>Aspect</th>
-                            <th><strong>Cosmetic (Passive)</strong></th>
-                            <th><strong>Deep (Active)</strong></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Mindset</strong></td>
-                            <td>Look like I'm listening, but mind is elsewhere</td>
-                            <td>Listening to understand values and emotions</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Microphone</strong></td>
-                            <td>Muted</td>
-                            <td>Off mute</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Multitask</strong></td>
-                            <td>Yes</td>
-                            <td>No</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Phone</strong></td>
-                            <td>On</td>
-                            <td>Away</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <!-- Video -->
-            <div class="col-lg-5">
-                <h5 class="mb-3 text-center">Active Listening in Customer Service</h5>
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/rzsVh8YwZEQ" 
-                            title="Active Listening in Customer Service" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                    </iframe>
-                </div>
-                    <small class="text-muted d-block mt-3">
-                        Learn practical active listening techniques for better customer service
-                    </small>
-            </div>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">
+            <i class="bi bi-calendar-check"></i> Book a free consultation
+          </a>
+          <a href="#services" class="btn-ghost">
+            View services <i class="bi bi-arrow-right"></i>
+          </a>
         </div>
-
-        <!-- Key Skills Cards -->
-        <h5 class="text-center fw-bold mb-4">The 5 Pillars of Active Listening</h5>
-        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4">
-            <div class="col" data-aos="zoom-in" data-aos-delay="100">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center">
-                        <h6 class="fw-bold text-primary"><i class="bi bi-chat-dots-fill"></i> Tracking</h6>
-                        <p class="small">Show you're following with verbal cues, like “I see…”, “I understand…”</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col" data-aos="zoom-in" data-aos-delay="200">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center">
-                        <h6 class="fw-bold text-danger"><i class="bi bi-heart-fill"></i> Empathetic</h6>
-                        <p class="small">Connect emotionally, not just logically</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col" data-aos="zoom-in" data-aos-delay="300">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center">
-                        <h6 class="fw-bold text-success"><i class="bi bi-arrow-repeat"></i> Paraphrasing</h6>
-                        <p class="small">Confirm understanding by restating key points.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col" data-aos="zoom-in" data-aos-delay="400">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center">
-                        <h6 class="fw-bold text-warning"><i class="bi bi-question-circle-fill"></i> Clarifying</h6>
-                        <p class="small">Dig deeper with thoughtful, open-ended questions.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col" data-aos="zoom-in" data-aos-delay="500">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center">
-                        <h6 class="fw-bold text-info"><i class="bi bi-plus-circle-fill"></i> Positive Language</h6>
-                        <p class="small">Frame everything as a solution, not a problem.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">18+</div>
+            <div class="stat-label">Years experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">4</div>
+            <div class="stat-label">Core service areas</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">3+</div>
+            <div class="stat-label">Industries served</div>
+          </div>
         </div>
-
+      </div>
+      <div class="hero-visual">
+        <div class="hero-bg-shape"></div>
+        <img src="assets/img/profile/profile-2.png" alt="Mohammad Yousuf — CX Consultant" onerror="this.style.display='none'">
+        <div class="hero-tag">
+          <strong>Mohammad Yousuf</strong>
+          Customer Experience Leader
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- Wisdom of Geese Section -->
-<section id="geese" class="about section">
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Wisdom of Geese</h2>
-        <div class="title-shape">
-            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-            </svg>
-        </div>
-        <p class="lead">Powerful Leadership Lessons from Nature</p>
+<!-- ── CLIENTS BAR ── -->
+<div class="clients-bar">
+  <span class="clients-bar-label">Working with</span>
+  <div class="client-pill"><i class="bi bi-broadcast"></i> Telecom Companies</div>
+  <div class="client-pill"><i class="bi bi-headset"></i> Call Centers &amp; BPOs</div>
+  <div class="client-pill"><i class="bi bi-building"></i> Any Service Industry</div>
+  <div class="client-pill"><i class="bi bi-people"></i> Leadership Teams</div>
+</div>
+
+<!-- ── SERVICES ── -->
+<section id="services">
+  <div class="container">
+    <div class="services-header">
+      <div>
+        <div class="section-label">What I offer</div>
+        <h2 class="section-title">Services built around <em>your</em> customers</h2>
+      </div>
+      <p class="section-intro">
+        Every engagement is tailored to your team's reality — whether that's frontline training, leadership development, or a full CX audit.
+      </p>
     </div>
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row align-items-center">
-            
-            <!-- Left Side: Content -->
-            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-                <div class="about-content">
-                    <h4>Why Geese Fly in V Formation</h4>
-                    <p class="lead mb-4">
-                        Geese understand the power of teamwork, shared leadership, and mutual support — 
-                        lessons that are highly relevant in building strong customer service teams.
-                    </p>
-                    
-                    <h5 class="mt-4">Key Lessons from Geese:</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-3"><strong>🔹 Stay in Formation</strong> – Teamwork creates uplift for everyone.</li>
-                        <li class="mb-3"><strong>🔹 Share Leadership</strong> – When the leader gets tired, another takes over.</li>
-                        <li class="mb-3"><strong>🔹 Encourage Each Other</strong> – They honk to motivate those ahead.</li>
-                        <li class="mb-3"><strong>🔹 Support the Weak</strong> – Sick or injured geese are never left behind.</li>
-                        <li class="mb-3"><strong>🔹 Get Farther Together</strong> – Working as a team helps them fly much longer distances.</li>
-                    </ul>
-                    <p class="mt-4 fst-italic text-center">In customer experience, we fly farther together than any of us could alone.</p>
-                </div>
-            </div>
-
-            <!-- Right Side: Video -->
-            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-                <div class="text-center">
-                    <h5 class="mb-3">Leadership Lessons from Geese</h5>
-                    <div class="ratio ratio-16x9">
-                        <iframe 
-                            src="https://www.youtube.com/embed/5rOg4WfNDfM" 
-                            title="Wisdom of Geese" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <small class="text-muted d-block mt-3">
-                        A beautiful lesson on teamwork, leadership &amp; support
-                    </small>
-                </div>
-            </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <i class="bi bi-mortarboard service-icon"></i>
+        <h3>CX Training Programs</h3>
+        <p>Frontline and mid-level training that builds customer-first skills, empathy, and communication across your entire team. Practical, engaging, and built for real customer interactions.</p>
+        <div class="service-tags">
+          <span class="tag">Frontline Staff</span>
+          <span class="tag">In-person</span>
+          <span class="tag">Virtual</span>
         </div>
+      </div>
+      <div class="service-card fade-up">
+        <i class="bi bi-people service-icon"></i>
+        <h3>Leadership Workshops</h3>
+        <p>Equip team leads and managers with the mindset and tools to build, inspire, and sustain a customer-first culture from the inside out.</p>
+        <div class="service-tags">
+          <span class="tag">Managers</span>
+          <span class="tag">Team Leads</span>
+          <span class="tag">Half / Full Day</span>
+        </div>
+      </div>
+      <div class="service-card fade-up">
+        <i class="bi bi-headset service-icon"></i>
+        <h3>Contact Center Consulting</h3>
+        <p>End-to-end operations review to improve efficiency, reduce customer churn, and lift CSAT scores — backed by 18+ years of direct contact center leadership experience.</p>
+        <div class="service-tags">
+          <span class="tag">Operations</span>
+          <span class="tag">Strategy</span>
+          <span class="tag">CSAT</span>
+        </div>
+      </div>
+      <div class="service-card fade-up">
+        <i class="bi bi-clipboard-check service-icon"></i>
+        <h3>CX Audits &amp; Assessments</h3>
+        <p>Identify hidden gaps in your customer journey and receive a clear, prioritized roadmap to close them — fast. Ideal for organizations ready to make customer experience a competitive advantage.</p>
+        <div class="service-tags">
+          <span class="tag">Assessment</span>
+          <span class="tag">Roadmap</span>
+          <span class="tag">Quick Wins</span>
+        </div>
+      </div>
     </div>
-</section> 
-<!-- End Wisdom of Geese Section -->
-
-<!-- Solution Section -->
-<section id="solution" class="about section">
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Service Solutions</h2>
-        <div class="title-shape">
-            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-            </svg>
-        </div>
-        <p class="lead">Be Proactive • Take Ownership • Think Innovatively • Keep Promises</p>
-    </div>
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-        
-        <!-- Top Row: Text (now wider) + Compass Image (now narrower) -->
-        <div class="row align-items-center mb-5">
-            <!-- LEFT COLUMN - ENLARGED to col-lg-7 -->
-            <div class="col-lg-7" data-aos="fade-right" data-aos-delay="200">
-                <div class="about-content">
-                    <h4>What are Service Solutions?</h4>
-                        <p class="lead mb-4">
-                            Service solutions aren't just processes—they're a mindset. 
-                            I help teams deeply understand customer needs and deliver exceptional 
-                            service that builds lifelong loyalty.
-                        </p>
-                    
-                    <!-- Card Design Here -->
-                    <div class="row text-center mt-4">
-                        <div class="col-md-3 col-sm-6 mb-3" data-aos="zoom-in" data-aos-delay="100">
-                            <div class="card rounded-0 py-4 border-0 bg-green-lt shadow-sm h-100">
-                                <div class="h4 mb-3">🚀</div>
-                                <div class="fw-bold text-uppercase">Proactive</div>
-                                <p class="text-muted small mb-0">Don't be reactive</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 mb-3" data-aos="zoom-in" data-aos-delay="200">
-                            <div class="card rounded-0 py-4 border-0 bg-blue-lt shadow-sm h-100">
-                                <div class="h4 mb-3">🏠</div>
-                                <div class="fw-bold text-uppercase">Ownership</div>
-                                <p class="text-muted small mb-0">Take full responsibility for solving issues.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 mb-3" data-aos="zoom-in" data-aos-delay="300">
-                            <div class="card rounded-0 py-4 border-0 bg-yellow-lt shadow-sm h-100">
-                                <div class="h4 mb-3">💡</div>
-                                <div class="fw-bold text-uppercase">Innovative</div>
-                                <p class="text-muted small mb-0">Think creatively to find better solutions.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 mb-3" data-aos="zoom-in" data-aos-delay="400">
-                            <div class="card rounded-0 py-4 border-0 bg-purple-lt shadow-sm h-100">
-                                <div class="h4 mb-3">🤝</div>
-                                <div class="fw-bold text-uppercase">Keep Promises</div>
-                                <p class="text-muted small mb-0">Always deliver what you commit to.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- RIGHT COLUMN - NARROWED to col-lg-5 -->
-            <div class="col-lg-5 text-center" data-aos="fade-left" data-aos-delay="300">
-                <img src="assets/img/possible.jpg" class="img-fluid rounded shadow" alt="Possible vs Impossible">
-            </div>
-        </div>
-
-        <!-- Bottom Row: 8 Rules Image + Video (stays 50/50) -->
-        <div class="row g-4">
-            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="400">
-                <div class="text-center">
-                    <h4 class="mb-4">8 Rules for Good Customer Service</h4>
-                    <img src="assets/img/customer-service.png" class="img-fluid rounded shadow" alt="8 Rules for Good Customer Service">
-                </div>
-            </div>
-            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="500">
-                <div class="text-center">
-                    <h4 class="mb-4">Going The Extra Smile</h4>
-                    <div class="ratio ratio-16x9">
-                        <iframe 
-                            src="https://www.youtube.com/embed/7GaUReEdHeM" 
-                            title="Going the extra smile for you" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <small class="text-muted d-block mt-3">
-                        Brussels Airlines – A beautiful example of going the extra mile in customer service
-                    </small>
-                </div>
-            </div>
-        </div>
-    </div>
+  </div>
 </section>
-<!-- End Solution Section -->
 
-
-<!-- Contact Section -->
-<section id="contact" class="contact section light-background">
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-5">
-            
-            <!-- Left Side: Contact Info -->
-            <div class="col-lg-6">
-                <div class="content" data-aos="fade-up" data-aos-delay="200">
-                    <div class="section-category mb-3">Get In Touch</div>
-                    <h2 class="display-5 mb-4">Let's Connect</h2>
-                    <p class="lead mb-4">
-                        Let's discuss how I can help transform your customer experience, optimize contact center operations, or collaborate on impactful projects in telecom and service industries. 
-                        <strong>Reach out today—I'd love to hear from you.</strong>
-                    </p>
-                    
-                    <div class="contact-info mt-5">
-                        <div class="info-item d-flex mb-4">
-                            <i class="bi bi-telephone me-3 fs-4"></i>
-                            <div>
-                                <strong>Mobile (Personal)</strong><br>
-                                <a href="tel:+8801953819309">01953-819309</a>
-                            </div>
-                        </div>
-                        <div class="info-item d-flex mb-4">
-                            <i class="bi bi-envelope-at me-3 fs-4"></i>
-                            <div>
-                                <strong>Email</strong><br>
-                                <a href="mailto:m.yousuf.gp@gmail.com">m.yousuf.gp@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="info-item d-flex mb-4">
-                            <i class="bi bi-geo-alt me-3 fs-4"></i>
-                            <div>
-                                <strong>Location</strong><br>
-                                Dhaka, Bangladesh
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <div class="section-label">About</div>
+        <h2 class="section-title">Service is about genuine <em>human connection</em></h2>
+        <p>With 18+ years in Telecom and Service industry leadership, I've learned that exceptional customer experiences require more than efficient processes — they demand genuine human connection.</p>
+        <p>Every interaction shapes how customers feel about your brand. I help organizations transform those moments into lasting loyalty — through training their people, coaching their leaders, and improving their systems.</p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <i class="bi bi-ear pillar-icon"></i>
+            <div>
+              <h4>Listening</h4>
+              <p>Hearing what customers truly need, simplifying complexity, and taking decisive action.</p>
             </div>
-
-            <!-- Right Side: Netlify Contact Form -->
-            <div class="col-lg-6">
-                <div class="contact-form card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card-body p-4 p-lg-5">
-                        
-                        <!-- NETLIFY FORM - Updated -->
-                        <form method="POST" netlify name="contact" class="php-email-form">
-                            <!-- Required Netlify hidden fields -->
-                            <input type="hidden" name="form-name" value="contact">
-                            
-                            <!-- Optional: Add bot protection (recommended) -->
-                            <input type="hidden" name="bot-field">
-                            <div style="display: none;" data-netlify-honeypot="bot-field">
-                                <label>Don't fill this out if you're human: <input name="bot-field"></label>
-                            </div>
-                            
-                            <div class="row gy-4">
-                                <div class="col-md-6">
-                                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="email" name="email" class="form-control" placeholder="Your Email" required="">
-                                </div>
-                                <div class="col-12">
-                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required="">
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control" name="message" rows="6" placeholder="Your Message" required=""></textarea>
-                                </div>
-                                
-                                <!-- Custom success message area (optional) -->
-                                <div class="col-12">
-                                    <div id="form-success" style="display: none; background: #059652; color: white; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
-                                        Thank you! Your message has been sent.
-                                    </div>
-                                    <div id="form-error" style="display: none; background: #df1529; color: white; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
-                                        Sorry! There was an error. Please try again.
-                                    </div>
-                                </div>
-                                
-                                <div class="col-12 text-center">
-                                    <button type="submit" class="btn btn-primary w-100 py-3">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                        
-                    </div>
-                </div>
+          </div>
+          <div class="pillar">
+            <i class="bi bi-heart pillar-icon"></i>
+            <div>
+              <h4>Empathy</h4>
+              <p>Seeing through their eyes, listening with their ears, and feeling with their heart.</p>
             </div>
+          </div>
+          <div class="pillar">
+            <i class="bi bi-lightbulb pillar-icon"></i>
+            <div>
+              <h4>Solution-Oriented</h4>
+              <p>Taking ownership, thinking innovatively, and always keeping promises.</p>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="about-video">
+        <h3>Why Customer Experience Matters</h3>
+        <p>A powerful perspective on why CX is the key to sustainable business success.</p>
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/RmWLo0Trl8I" title="Why Customer Experience Matters" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
-<!-- /Contact Section -->
 
-  </main>
+<!-- ── QUOTE ── -->
+<div class="quote-section">
+  <div class="container">
+    <span class="quote-mark" aria-hidden="true">"</span>
+    <blockquote>
+      When people talk, listen completely. Most people never listen.
+    </blockquote>
+    <p class="quote-attr">— Ernest Hemingway</p>
+  </div>
+</div>
 
-
-
-<footer id="footer" class="footer py-2 bg-dark text-light border-top border-secondary">
-    <div class="container">
-        <div class="d-flex justify-content-between align-items-center gap-3">
-            <small>© 2026 Mohammad Yousuf. All Rights Reserved.</small>
-            
-            <small class="text-light-50">Built with passion for <strong>Customer Experience</strong></small>
-            
-            <a href="https://linkedin.com/in/mohammadyousuf-cx" target="_blank" class="text-light">
-                <i class="bi bi-linkedin"></i>
-            </a>
-        </div>
+<!-- ── METHODOLOGY ── -->
+<section id="methodology">
+  <div class="container">
+    <div class="method-intro">
+      <div>
+        <div class="section-label">Training methodology</div>
+        <h2 class="section-title">A glimpse of how <em>I train teams</em></h2>
+      </div>
+      <p class="section-intro">
+        My training philosophy centers on three interconnected disciplines — the building blocks of every high-performing customer service team.
+      </p>
     </div>
+
+    <div class="method-tabs">
+      <button class="tab-btn active" data-tab="empathy">Empathy</button>
+      <button class="tab-btn" data-tab="listening">Active Listening</button>
+      <button class="tab-btn" data-tab="geese">Team Dynamics</button>
+      <button class="tab-btn" data-tab="solutions">Service Solutions</button>
+    </div>
+
+    <!-- Empathy -->
+    <div class="tab-panel active" id="tab-empathy">
+      <div class="method-content">
+        <h3>The Empathy Factor</h3>
+        <p>Empathy is powerful because it doesn't always require a physical solution — often, it only requires genuine understanding. Different customers need different empathetic approaches.</p>
+        <div class="empathy-types">
+          <div class="empathy-row">
+            <div class="empathy-type"><i class="bi bi-emoji-angry" style="color:var(--accent)"></i> Angry customers</div>
+            <div class="empathy-approach">Pause. Listen. Validate feelings first. Empathy before solutions.</div>
+          </div>
+          <div class="empathy-row">
+            <div class="empathy-type"><i class="bi bi-stopwatch" style="color:var(--accent)"></i> Impatient customers</div>
+            <div class="empathy-approach">Respect their time. Commit to speed. Over-deliver on promises.</div>
+          </div>
+          <div class="empathy-row">
+            <div class="empathy-type"><i class="bi bi-lightbulb" style="color:var(--accent)"></i> Know-it-all customers</div>
+            <div class="empathy-approach">Validate their expertise. Guide gently. Lead with respect.</div>
+          </div>
+          <div class="empathy-row">
+            <div class="empathy-type"><i class="bi bi-emoji-frown" style="color:var(--accent)"></i> Dissatisfied customers</div>
+            <div class="empathy-approach">Listen deeper. Ask smarter questions. Exceed expectations.</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/1f0eSejlzLo" title="How empathy works" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <p style="font-size:13px; color:var(--ink-3); margin-top:10px;">A powerful explanation of the real meaning and power of empathy in service.</p>
+      </div>
+    </div>
+
+    <!-- Listening -->
+    <div class="tab-panel" id="tab-listening">
+      <div class="method-content">
+        <h3>From Passive to Active Listening</h3>
+        <p>True service requires moving beyond cosmetic listening to deep, active listening — where you're fully present for the customer.</p>
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Aspect</th>
+              <th>Cosmetic (passive)</th>
+              <th>Deep (active)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Mindset</td><td class="bad">Mind is elsewhere</td><td class="good">Understanding values & emotions</td></tr>
+            <tr><td>Attention</td><td class="bad">Multitasking</td><td class="good">Fully present</td></tr>
+            <tr><td>Phone</td><td class="bad">On and distracting</td><td class="good">Put away</td></tr>
+            <tr><td>Response</td><td class="bad">Generic replies</td><td class="good">Paraphrases & clarifies</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/rzsVh8YwZEQ" title="Active Listening in Customer Service" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <p style="font-size:13px; color:var(--ink-3); margin-top:10px;">Practical active listening techniques for customer service teams.</p>
+      </div>
+    </div>
+
+    <!-- Geese -->
+    <div class="tab-panel" id="tab-geese">
+      <div class="method-content">
+        <h3>Wisdom of Geese — Team Dynamics</h3>
+        <p>Nature's greatest teamwork lesson: geese fly 71% farther in V formation than alone. Customer service teams that operate this way go much farther too.</p>
+        <div class="geese-grid" style="margin-top:1.5rem">
+          <div class="geese-card">
+            <i class="bi bi-grid-3x3 gc-icon"></i>
+            <h4>Stay in Formation</h4>
+            <p>Teamwork creates uplift for everyone.</p>
+          </div>
+          <div class="geese-card">
+            <i class="bi bi-arrow-repeat gc-icon"></i>
+            <h4>Share Leadership</h4>
+            <p>When one tires, another steps up.</p>
+          </div>
+          <div class="geese-card">
+            <i class="bi bi-megaphone gc-icon"></i>
+            <h4>Encourage Each Other</h4>
+            <p>They honk to motivate those ahead.</p>
+          </div>
+          <div class="geese-card">
+            <i class="bi bi-heart gc-icon"></i>
+            <h4>Support the Weak</h4>
+            <p>No one is ever left behind.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/5rOg4WfNDfM" title="Wisdom of Geese" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <p style="font-size:13px; color:var(--ink-3); margin-top:10px;">A beautiful lesson on teamwork, leadership and mutual support.</p>
+      </div>
+    </div>
+
+    <!-- Solutions -->
+    <div class="tab-panel" id="tab-solutions">
+      <div class="method-content">
+        <h3>Service Solutions Mindset</h3>
+        <p>Service solutions aren't just processes — they're a mindset. I help teams deeply understand customer needs and deliver exceptional service that builds lifelong loyalty.</p>
+        <ul class="method-list">
+          <li><strong>Proactive</strong> — Anticipate needs before they become problems.</li>
+          <li><strong>Take Ownership</strong> — Full responsibility for solving every issue.</li>
+          <li><strong>Think Innovatively</strong> — Creative solutions, not scripted responses.</li>
+          <li><strong>Keep Promises</strong> — Always deliver exactly what you commit to.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/7GaUReEdHeM" title="Going the extra smile" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <p style="font-size:13px; color:var(--ink-3); margin-top:10px;">Brussels Airlines — a beautiful example of going the extra mile in service.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="section-label">Get in touch</div>
+        <h2>Let's work<br>together</h2>
+        <p>Ready to transform your team's customer experience? Let's talk about what's possible — whether it's a training program, a leadership workshop, or a full CX audit.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="bi bi-telephone"></i>
+            <div>
+              <strong>Mobile</strong>
+              <a href="tel:+8801953819309">01953-819309</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="bi bi-envelope"></i>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:m.yousuf.gp@gmail.com">m.yousuf.gp@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <div>
+              <strong>Location</strong>
+              <span>Dhaka, Bangladesh</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-social">
+          <a href="https://linkedin.com/in/mohammadyousuf-cx" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://www.facebook.com/mohammadyousufcx" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <form class="contact-form" method="POST" netlify name="contact">
+          <input type="hidden" name="form-name" value="contact">
+          <div style="display:none" data-netlify-honeypot="bot-field">
+            <input name="bot-field">
+          </div>
+          <div id="form-success" class="form-success">
+            Thank you! Your message has been sent. I'll be in touch shortly.
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Ahmed Rahman" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="org">Organization</label>
+            <input type="text" id="org" name="organization" placeholder="Company or institution name">
+          </div>
+          <div class="form-group">
+            <label for="subject">What can I help with?</label>
+            <input type="text" id="subject" name="subject" placeholder="e.g. CX Training for 30 agents" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your team, goals, or challenges..." required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            Book a free consultation <i class="bi bi-arrow-right"></i>
+          </button>
+          <p class="form-note">I typically respond within 24 hours.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="container footer-inner">
+    <a href="#hero" class="footer-logo">CX<span>.</span> Mohammad Yousuf</a>
+    <span>© 2026 All Rights Reserved</span>
+    <a href="https://linkedin.com/in/mohammadyousuf-cx" target="_blank" rel="noopener">
+      <i class="bi bi-linkedin"></i> LinkedIn
+    </a>
+  </div>
 </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<script>
+  // ── Nav active state ──
+  const navLinks = document.querySelectorAll('nav a');
+  const sections = document.querySelectorAll('section[id]');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('active'));
+        const active = document.querySelector(`nav a[href="#${e.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { threshold: 0.35 });
+  sections.forEach(s => observer.observe(s));
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  // ── Hamburger ──
+  const ham = document.getElementById('hamburger');
+  const nav = document.getElementById('mainNav');
+  ham.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    ham.innerHTML = nav.classList.contains('open')
+      ? '<i class="bi bi-x-lg"></i>'
+      : '<i class="bi bi-list"></i>';
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('open');
+    ham.innerHTML = '<i class="bi bi-list"></i>';
+  }));
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  // ── Tabs ──
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+    });
+  });
 
+  // ── Fade up on scroll ──
+  const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => fadeObserver.observe(el));
+
+  // ── Form ──
+  const form = document.querySelector('.contact-form');
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('.submit-btn');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+      try {
+        const res = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(new FormData(form)).toString()
+        });
+        if (res.ok) {
+          document.getElementById('form-success').style.display = 'block';
+          form.reset();
+        }
+      } catch(err) {}
+      btn.textContent = 'Book a free consultation →';
+      btn.disabled = false;
+    });
+  }
+</script>
 
 </body>
-
 </html>
